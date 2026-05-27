@@ -1,0 +1,123 @@
+<template>
+    <div class={containerClass}>
+
+        <!-- FAB launcher button (shown when minimized) -->
+        <template lwc:if={isMinimized}>
+            <button class="fab" onclick={toggleChat} title="Open Chat">
+                <lightning-icon icon-name="utility:einstein" size="medium" alternative-text="Chat"></lightning-icon>
+                <template lwc:if={unreadCount}>
+                    <span class="fab-badge">{unreadCount}</span>
+                </template>
+            </button>
+        </template>
+
+        <!-- Chat window (shown when open) -->
+        <template lwc:else>
+            <div class="chat-window">
+
+                <!-- Header — click to minimize -->
+                <div class="chat-header" onclick={toggleChat} title="Minimize">
+                    <div class="header-icon">
+                        <lightning-icon icon-name="utility:einstein" size="small" alternative-text="Nexus"></lightning-icon>
+                    </div>
+                    <div class="header-info">
+                        <span class="header-eyebrow">Nexus Digital Assistant</span>
+                        <span class="header-title">Chat</span>
+                    </div>
+                    <div class="header-actions">
+                        <span class="status-badge">
+                            <span class="status-dot"></span>Online
+                        </span>
+                        <button class="icon-btn minimize-btn" onclick={handleMinimize} title="Minimize">
+                            <lightning-icon icon-name="utility:minimize_window" size="x-small" alternative-text="Minimize"></lightning-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Message List -->
+                <div class="message-list" lwc:ref="messageList">
+
+                    <!-- Welcome state -->
+                    <template lwc:if={showWelcome}>
+                        <div class="welcome">
+                            <div class="welcome-icon">
+                                <lightning-icon icon-name="utility:einstein" size="large" alternative-text="Einstein"></lightning-icon>
+                            </div>
+                            <h2 class="welcome-title">Hi, I'm Nexus</h2>
+                            <p class="welcome-sub">Your digital assistant powered BAE Mission Assist. Ask me anything or start with a suggestion.</p>
+                            <div class="chips">
+                                <template for:each={suggestions} for:item="s">
+                                    <button key={s} class="chip" data-label={s} onclick={handleSuggestion}>{s}</button>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <!-- Messages -->
+                    <template for:each={uiMessages} for:item="msg">
+                        <div key={msg.id} class={msg.wrapClass}>
+                            <div class={msg.avatarClass}>{msg.initials}</div>
+                            <div class="msg-body">
+                                <span class="msg-name">{msg.name}</span>
+                                <div class={msg.bubbleClass}>
+                                    <template lwc:if={msg.typing}>
+                                        <div class="typing-dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </template>
+                                    <template lwc:else>
+                                        {msg.text}
+                                    </template>
+                                </div>
+                                <template lwc:if={msg.time}>
+                                    <span class="msg-time">{msg.time}</span>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Error -->
+                <template lwc:if={errorMessage}>
+                    <div class="error-bar">
+                        <lightning-icon icon-name="utility:error" size="x-small" alternative-text="Error"></lightning-icon>
+                        {errorMessage}
+                    </div>
+                </template>
+
+                <!-- Input Panel -->
+                <div class="input-panel">
+                    <div class="input-toolbar">
+                        <span class="input-label">Ask Nexus</span>
+                        <button class="tool-btn" title="Clear conversation" onclick={clearChat}>
+                            <lightning-icon icon-name="utility:delete" size="x-small" alternative-text="Clear"></lightning-icon>
+                        </button>
+                    </div>
+                    <div class="input-row">
+                        <textarea
+                            class="chat-textarea"
+                            placeholder="Ask Nexus anything…"
+                            value={inputValue}
+                            oninput={handleInput}
+                            onkeydown={handleKeyDown}
+                            disabled={isLoading}
+                            rows="1">
+                        </textarea>
+                        <button
+                            class="send-btn"
+                            onclick={sendMessage}
+                            disabled={sendDisabled}
+                            title="Send">
+                            <lightning-icon icon-name="utility:send" size="x-small" alternative-text="Send"></lightning-icon>
+                        </button>
+                    </div>
+                    <div class="input-footer">
+                        ★ Powered by BAE Mission Assist AI · Responses may not always be accurate
+                    </div>
+                </div>
+
+            </div>
+        </template>
+
+    </div>
+</template>

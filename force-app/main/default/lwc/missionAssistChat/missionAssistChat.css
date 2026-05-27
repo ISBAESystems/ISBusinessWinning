@@ -1,0 +1,455 @@
+/* ── Container ─────────────────────────────────────────────────────────── */
+.chat-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9000;
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+}
+
+/* ── FAB (minimized state) ─────────────────────────────────────────────── */
+.fab {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.fab:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.fab:active {
+    transform: scale(0.96);
+}
+
+.fab lightning-icon {
+    --sds-c-icon-color-foreground-default: #ffffff;
+}
+
+/* Unread badge */
+.fab-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #c23934;
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+}
+
+/* ── Chat window ───────────────────────────────────────────────────────── */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 560px;
+    background: #f3f3f3;
+    border: 1px solid #dddbda;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px) scale(0.95); }
+    to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+
+/* ── Header ────────────────────────────────────────────────────────────── */
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 0.75rem;
+    background: #032d60;
+    flex-shrink: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.header-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 0.25rem;
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.header-icon lightning-icon {
+    --sds-c-icon-color-foreground-default: #ffffff;
+}
+
+.header-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.header-eyebrow {
+    font-size: 0.625rem;
+    color: rgba(255, 255, 255, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+}
+
+.header-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(46, 132, 74, 0.25);
+    color: #5db87a;
+    font-size: 0.625rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: 1px solid rgba(93, 184, 122, 0.4);
+}
+
+.status-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #5db87a;
+}
+
+.icon-btn {
+    width: 26px;
+    height: 26px;
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    transition: background 0.15s;
+    flex-shrink: 0;
+}
+
+.icon-btn:hover {
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.icon-btn lightning-icon {
+    --sds-c-icon-color-foreground-default: rgba(255,255,255,0.9);
+}
+
+/* ── Message List ──────────────────────────────────────────────────────── */
+.message-list {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+    padding: 1rem;
+    scroll-behavior: smooth;
+}
+
+.message-list::-webkit-scrollbar { width: 4px; }
+.message-list::-webkit-scrollbar-track { background: transparent; }
+.message-list::-webkit-scrollbar-thumb { background: #c9c7c5; border-radius: 2px; }
+
+/* ── Welcome ───────────────────────────────────────────────────────────── */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 0.875rem;
+    text-align: center;
+    padding: 1.5rem;
+    min-height: 100%;
+}
+
+.welcome-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(156, 39, 176, 0.35);
+}
+
+.welcome-icon lightning-icon {
+    --sds-c-icon-color-foreground-default: #ffffff;
+}
+
+.welcome-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #181818;
+    margin: 0;
+}
+
+.welcome-sub {
+    font-size: 0.8rem;
+    color: #706e6b;
+    max-width: 280px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+}
+
+.chip {
+    background: #ffffff;
+    border: 1px solid #0176d3;
+    color: #0176d3;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+}
+
+.chip:hover { background: #d8edff; }
+
+/* ── Messages ──────────────────────────────────────────────────────────── */
+.msg-wrap {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.msg-user      { flex-direction: row-reverse; }
+
+.msg-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.avatar-user { background: linear-gradient(135deg, #0176d3, #032d60); }
+.avatar-ai   { background: linear-gradient(135deg, #9c27b0, #673ab7); }
+
+.msg-body {
+    max-width: 74%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.msg-user .msg-body      { align-items: flex-end; }
+.msg-assistant .msg-body { align-items: flex-start; }
+
+.msg-name {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #706e6b;
+}
+
+.msg-bubble {
+    padding: 7px 11px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    word-break: break-word;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.bubble-user {
+    background: #0176d3;
+    color: #ffffff;
+    border-radius: 0.5rem 0.5rem 4px 0.5rem;
+}
+
+.bubble-assistant {
+    background: #ffffff;
+    color: #181818;
+    border: 1px solid #dddbda;
+    border-radius: 0.5rem 0.5rem 0.5rem 4px;
+}
+
+.msg-time {
+    font-size: 0.6rem;
+    color: #706e6b;
+}
+
+/* ── Typing Dots ───────────────────────────────────────────────────────── */
+.typing-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.typing-dots span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #706e6b;
+    animation: dotBounce 1.2s infinite ease-in-out;
+}
+
+.typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+.typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes dotBounce {
+    0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; }
+    40%           { transform: scale(1.0); opacity: 1; }
+}
+
+/* ── Error Bar ─────────────────────────────────────────────────────────── */
+.error-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0.75rem;
+    padding: 6px 10px;
+    background: #fef0f0;
+    border: 1px solid #fcc;
+    color: #c23934;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+}
+
+/* ── Input Panel ───────────────────────────────────────────────────────── */
+.input-panel {
+    background: #ffffff;
+    border-top: 1px solid #dddbda;
+    flex-shrink: 0;
+}
+
+.input-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 3px 8px;
+    border-bottom: 1px solid #dddbda;
+}
+
+.input-label {
+    font-size: 0.65rem;
+    color: #706e6b;
+    font-weight: 500;
+    flex: 1;
+}
+
+.tool-btn {
+    width: 26px;
+    height: 26px;
+    border: none;
+    background: none;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #706e6b;
+    transition: background 0.1s;
+}
+
+.tool-btn:hover { background: #f3f3f3; }
+
+.input-row {
+    display: flex;
+    align-items: flex-end;
+    padding: 7px 8px;
+    gap: 6px;
+}
+
+.chat-textarea {
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: inherit;
+    font-size: 0.8rem;
+    color: #181818;
+    line-height: 1.5;
+    background: transparent;
+    min-height: 20px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.chat-textarea::placeholder { color: #706e6b; }
+
+.send-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: #0176d3;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    transition: background 0.15s;
+}
+
+.send-btn:hover:not([disabled]) { background: #0156a8; }
+
+.send-btn[disabled] {
+    background: #c9c7c5;
+    cursor: not-allowed;
+}
+
+.send-btn lightning-icon {
+    --sds-c-icon-color-foreground-default: #ffffff;
+}
+
+.input-footer {
+    padding: 3px 8px;
+    font-size: 0.575rem;
+    color: #706e6b;
+    border-top: 1px solid #dddbda;
+}

@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_IDCLM__c</fullName>
+    <description>The internal BAE organization code associated with the org/department that &quot;owns&quot; the project.</description>
+    <inlineHelpText>The internal BAE organization code associated with the org/department that &quot;owns&quot; the project.</inlineHelpText>
+    <label>Org ID</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Org_NameCLM__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>401.01.05.24.730116</fullName>
+                <default>false</default>
+                <label>401.01.05.24.730116</label>
+            </value>
+            <value>
+                <fullName>401.01.05.25.731016</fullName>
+                <default>false</default>
+                <label>401.01.05.25.731016</label>
+            </value>
+            <value>
+                <fullName>401.01.1130202</fullName>
+                <default>false</default>
+                <label>401.01.1130202</label>
+            </value>
+            <value>
+                <fullName>401.01.1131000</fullName>
+                <default>false</default>
+                <label>401.01.1131000</label>
+            </value>
+            <value>
+                <fullName>401.01.1141000</fullName>
+                <default>false</default>
+                <label>401.01.1141000</label>
+            </value>
+            <value>
+                <fullName>401.01.1190000</fullName>
+                <default>false</default>
+                <label>401.01.1190000</label>
+            </value>
+            <value>
+                <fullName>401.01.1230202</fullName>
+                <default>false</default>
+                <label>401.01.1230202</label>
+            </value>
+            <value>
+                <fullName>401.01.1270202</fullName>
+                <default>false</default>
+                <label>401.01.1270202</label>
+            </value>
+            <value>
+                <fullName>401.01.1410203</fullName>
+                <default>false</default>
+                <label>401.01.1410203</label>
+            </value>
+            <value>
+                <fullName>401.01.1680103</fullName>
+                <default>false</default>
+                <label>401.01.1680103</label>
+            </value>
+            <value>
+                <fullName>401.01.1700203</fullName>
+                <default>false</default>
+                <label>401.01.1700203</label>
+            </value>
+            <value>
+                <fullName>401.01.1900103</fullName>
+                <default>false</default>
+                <label>401.01.1900103</label>
+            </value>
+            <value>
+                <fullName>401.01.2610000</fullName>
+                <default>false</default>
+                <label>401.01.2610000</label>
+            </value>
+            <value>
+                <fullName>401.01.2610033</fullName>
+                <default>false</default>
+                <label>401.01.2610033</label>
+            </value>
+            <value>
+                <fullName>401.02.2000202</fullName>
+                <default>false</default>
+                <label>401.02.2000202</label>
+            </value>
+            <value>
+                <fullName>401.02.2026000</fullName>
+                <default>false</default>
+                <label>401.02.2026000</label>
+            </value>
+            <value>
+                <fullName>401.02.2026600</fullName>
+                <default>false</default>
+                <label>401.02.2026600</label>
+            </value>
+            <value>
+                <fullName>401.02.2060202</fullName>
+                <default>false</default>
+                <label>401.02.2060202</label>
+            </value>
+            <value>
+                <fullName>401.02.2070202</fullName>
+                <default>false</default>
+                <label>401.02.2070202</label>
+            </value>
+            <value>
+                <fullName>401.02.2126700</fullName>
+                <default>false</default>
+                <label>401.02.2126700</label>
+            </value>
+            <value>
+                <fullName>401.02.2126800</fullName>
+                <default>false</default>
+                <label>401.02.2126800</label>
+            </value>
+            <value>
+                <fullName>401.02.2140000</fullName>
+                <default>false</default>
+                <label>401.02.2140000</label>
+            </value>
+            <value>
+                <fullName>401.02.2160000</fullName>
+                <default>false</default>
+                <label>401.02.2160000</label>
+            </value>
+            <value>
+                <fullName>401.02.2170000</fullName>
+                <default>false</default>
+                <label>401.02.2170000</label>
+            </value>
+            <value>
+                <fullName>401.02.2180000</fullName>
+                <default>false</default>
+                <label>401.02.2180000</label>
+            </value>
+            <value>
+                <fullName>401.02.2190000</fullName>
+                <default>false</default>
+                <label>401.02.2190000</label>
+            </value>
+            <value>
+                <fullName>401.02.2200000</fullName>
+                <default>false</default>
+                <label>401.02.2200000</label>
+            </value>
+            <value>
+                <fullName>401.02.2231000</fullName>
+                <default>false</default>
+                <label>401.02.2231000</label>
+            </value>
+            <value>
+                <fullName>401.02.2231033</fullName>
+                <default>false</default>
+                <label>401.02.2231033</label>
+            </value>
+            <value>
+                <fullName>401.02.2240000</fullName>
+                <default>false</default>
+                <label>401.02.2240000</label>
+            </value>
+            <value>
+                <fullName>401.02.2241000</fullName>
+                <default>false</default>
+                <label>401.02.2241000</label>
+            </value>
+            <value>
+                <fullName>401.02.2241033</fullName>
+                <default>false</default>
+                <label>401.02.2241033</label>
+            </value>
+            <value>
+                <fullName>401.02.2250000</fullName>
+                <default>false</default>
+                <label>401.02.2250000</label>
+            </value>
+            <value>
+                <fullName>401.02.2250033</fullName>
+                <default>false</default>
+                <label>401.02.2250033</label>
+            </value>
+            <value>
+                <fullName>401.02.2270000</fullName>
+                <default>false</default>
+                <label>401.02.2270000</label>
+            </value>
+            <value>
+                <fullName>401.02.2280000</fullName>
+                <default>false</default>
+                <label>401.02.2280000</label>
+            </value>
+            <value>
+                <fullName>401.02.2320000</fullName>
+                <default>false</default>
+                <label>401.02.2320000</label>
+            </value>
+            <value>
+                <fullName>401.02.2330000</fullName>
+                <default>false</default>
+                <label>401.02.2330000</label>
+            </value>
+            <value>
+                <fullName>401.02.2330033</fullName>
+                <default>false</default>
+                <label>401.02.2330033</label>
+            </value>
+            <value>
+                <fullName>401.02.2380000</fullName>
+                <default>false</default>
+                <label>401.02.2380000</label>
+            </value>
+            <value>
+                <fullName>401.02.2380033</fullName>
+                <default>false</default>
+                <label>401.02.2380033</label>
+            </value>
+            <value>
+                <fullName>401.02.2627100</fullName>
+                <default>false</default>
+                <label>401.02.2627100</label>
+            </value>
+            <value>
+                <fullName>401.02.2627200</fullName>
+                <default>false</default>
+                <label>401.02.2627200</label>
+            </value>
+            <value>
+                <fullName>401.02.2627233</fullName>
+                <default>false</default>
+                <label>401.02.2627233</label>
+            </value>
+            <value>
+                <fullName>401.02.2627300</fullName>
+                <default>false</default>
+                <label>401.02.2627300</label>
+            </value>
+            <value>
+                <fullName>401.02.2627400</fullName>
+                <default>false</default>
+                <label>401.02.2627400</label>
+            </value>
+            <value>
+                <fullName>401.02.2627500</fullName>
+                <default>false</default>
+                <label>401.02.2627500</label>
+            </value>
+            <value>
+                <fullName>401.02.2627600</fullName>
+                <default>false</default>
+                <label>401.02.2627600</label>
+            </value>
+            <value>
+                <fullName>401.02.2627700</fullName>
+                <default>false</default>
+                <label>401.02.2627700</label>
+            </value>
+            <value>
+                <fullName>401.02.2660000</fullName>
+                <default>false</default>
+                <label>401.02.2660000</label>
+            </value>
+            <value>
+                <fullName>401.02.2670000</fullName>
+                <default>false</default>
+                <label>401.02.2670000</label>
+            </value>
+            <value>
+                <fullName>401.02.2680000</fullName>
+                <default>false</default>
+                <label>401.02.2680000</label>
+            </value>
+            <value>
+                <fullName>401.02.2690000</fullName>
+                <default>false</default>
+                <label>401.02.2690000</label>
+            </value>
+            <value>
+                <fullName>401.02.2829100</fullName>
+                <default>false</default>
+                <label>401.02.2829100</label>
+            </value>
+            <value>
+                <fullName>401.02.2829200</fullName>
+                <default>false</default>
+                <label>401.02.2829200</label>
+            </value>
+            <value>
+                <fullName>401.02.2829300</fullName>
+                <default>false</default>
+                <label>401.02.2829300</label>
+            </value>
+            <value>
+                <fullName>401.02.2829400</fullName>
+                <default>false</default>
+                <label>401.02.2829400</label>
+            </value>
+            <value>
+                <fullName>401.02.9026010</fullName>
+                <default>false</default>
+                <label>401.02.9026010</label>
+            </value>
+            <value>
+                <fullName>401.02.A229000</fullName>
+                <default>false</default>
+                <label>401.02.A229000</label>
+            </value>
+            <value>
+                <fullName>401.04.4100000</fullName>
+                <default>false</default>
+                <label>401.04.4100000</label>
+            </value>
+            <value>
+                <fullName>401.11.7062100</fullName>
+                <default>false</default>
+                <label>401.11.7062100</label>
+            </value>
+            <value>
+                <fullName>401.11.7063000</fullName>
+                <default>false</default>
+                <label>401.11.7063000</label>
+            </value>
+            <value>
+                <fullName>401.11.7063100</fullName>
+                <default>false</default>
+                <label>401.11.7063100</label>
+            </value>
+            <value>
+                <fullName>401.11.7064000</fullName>
+                <default>false</default>
+                <label>401.11.7064000</label>
+            </value>
+            <value>
+                <fullName>401.11.7064100</fullName>
+                <default>false</default>
+                <label>401.11.7064100</label>
+            </value>
+            <value>
+                <fullName>401.11.7527033</fullName>
+                <default>false</default>
+                <label>401.11.7527033</label>
+            </value>
+            <value>
+                <fullName>401.11.7527280</fullName>
+                <default>false</default>
+                <label>401.11.7527280</label>
+            </value>
+            <value>
+                <fullName>401.11.7529280</fullName>
+                <default>false</default>
+                <label>401.11.7529280</label>
+            </value>
+            <value>
+                <fullName>401.11.7529290</fullName>
+                <default>false</default>
+                <label>401.11.7529290</label>
+            </value>
+            <value>
+                <fullName>401.11.B000001</fullName>
+                <default>false</default>
+                <label>401.11.B000001</label>
+            </value>
+            <value>
+                <fullName>401.12.7109020</fullName>
+                <default>false</default>
+                <label>401.12.7109020</label>
+            </value>
+            <value>
+                <fullName>401.12.7109030</fullName>
+                <default>false</default>
+                <label>401.12.7109030</label>
+            </value>
+            <value>
+                <fullName>401.12.7109040</fullName>
+                <default>false</default>
+                <label>401.12.7109040</label>
+            </value>
+            <value>
+                <fullName>401.12.7109050</fullName>
+                <default>false</default>
+                <label>401.12.7109050</label>
+            </value>
+            <value>
+                <fullName>401.12.7109060</fullName>
+                <default>false</default>
+                <label>401.12.7109060</label>
+            </value>
+            <value>
+                <fullName>401.12.7110020</fullName>
+                <default>false</default>
+                <label>401.12.7110020</label>
+            </value>
+            <value>
+                <fullName>401.12.7110030</fullName>
+                <default>false</default>
+                <label>401.12.7110030</label>
+            </value>
+            <value>
+                <fullName>401.12.7110040</fullName>
+                <default>false</default>
+                <label>401.12.7110040</label>
+            </value>
+            <value>
+                <fullName>401.12.7110050</fullName>
+                <default>false</default>
+                <label>401.12.7110050</label>
+            </value>
+            <value>
+                <fullName>401.12.7110133</fullName>
+                <default>false</default>
+                <label>401.12.7110133</label>
+            </value>
+            <value>
+                <fullName>401.12.7110233</fullName>
+                <default>false</default>
+                <label>401.12.7110233</label>
+            </value>
+            <value>
+                <fullName>401.12.7110333</fullName>
+                <default>false</default>
+                <label>401.12.7110333</label>
+            </value>
+            <value>
+                <fullName>401.12.7110433</fullName>
+                <default>false</default>
+                <label>401.12.7110433</label>
+            </value>
+            <value>
+                <fullName>401.14.7214050</fullName>
+                <default>false</default>
+                <label>401.14.7214050</label>
+            </value>
+            <value>
+                <fullName>401.14.7214060</fullName>
+                <default>false</default>
+                <label>401.14.7214060</label>
+            </value>
+            <value>
+                <fullName>401.14.7216033</fullName>
+                <default>false</default>
+                <label>401.14.7216033</label>
+            </value>
+            <value>
+                <fullName>401.14.7216060</fullName>
+                <default>false</default>
+                <label>401.14.7216060</label>
+            </value>
+            <value>
+                <fullName>401.14.7216070</fullName>
+                <default>false</default>
+                <label>401.14.7216070</label>
+            </value>
+            <value>
+                <fullName>401.14.7216090</fullName>
+                <default>false</default>
+                <label>401.14.7216090</label>
+            </value>
+            <value>
+                <fullName>401.14.7216100</fullName>
+                <default>false</default>
+                <label>401.14.7216100</label>
+            </value>
+            <value>
+                <fullName>401.14.7216130</fullName>
+                <default>false</default>
+                <label>401.14.7216130</label>
+            </value>
+            <value>
+                <fullName>401.14.7216140</fullName>
+                <default>false</default>
+                <label>401.14.7216140</label>
+            </value>
+            <value>
+                <fullName>401.14.7216233</fullName>
+                <default>false</default>
+                <label>401.14.7216233</label>
+            </value>
+            <value>
+                <fullName>401.14.7216333</fullName>
+                <default>false</default>
+                <label>401.14.7216333</label>
+            </value>
+            <value>
+                <fullName>401.14.7216433</fullName>
+                <default>false</default>
+                <label>401.14.7216433</label>
+            </value>
+            <value>
+                <fullName>401.14.7217060</fullName>
+                <default>false</default>
+                <label>401.14.7217060</label>
+            </value>
+            <value>
+                <fullName>401.14.7217070</fullName>
+                <default>false</default>
+                <label>401.14.7217070</label>
+            </value>
+            <value>
+                <fullName>401.14.7217090</fullName>
+                <default>false</default>
+                <label>401.14.7217090</label>
+            </value>
+            <value>
+                <fullName>401.14.7217100</fullName>
+                <default>false</default>
+                <label>401.14.7217100</label>
+            </value>
+            <value>
+                <fullName>401.14.7217110</fullName>
+                <default>false</default>
+                <label>401.14.7217110</label>
+            </value>
+            <value>
+                <fullName>401.14.7217130</fullName>
+                <default>false</default>
+                <label>401.14.7217130</label>
+            </value>
+            <value>
+                <fullName>401.14.7218070</fullName>
+                <default>false</default>
+                <label>401.14.7218070</label>
+            </value>
+            <value>
+                <fullName>401.14.7516133</fullName>
+                <default>false</default>
+                <label>401.14.7516133</label>
+            </value>
+            <value>
+                <fullName>401.15.7301140</fullName>
+                <default>false</default>
+                <label>401.15.7301140</label>
+            </value>
+            <value>
+                <fullName>401.15.7301160</fullName>
+                <default>false</default>
+                <label>401.15.7301160</label>
+            </value>
+            <value>
+                <fullName>401.15.7307170</fullName>
+                <default>false</default>
+                <label>401.15.7307170</label>
+            </value>
+            <value>
+                <fullName>401.15.7310033</fullName>
+                <default>false</default>
+                <label>401.15.7310033</label>
+            </value>
+            <value>
+                <fullName>401.15.7310140</fullName>
+                <default>false</default>
+                <label>401.15.7310140</label>
+            </value>
+            <value>
+                <fullName>401.15.7310160</fullName>
+                <default>false</default>
+                <label>401.15.7310160</label>
+            </value>
+            <value>
+                <fullName>401.15.7310170</fullName>
+                <default>false</default>
+                <label>401.15.7310170</label>
+            </value>
+            <value>
+                <fullName>401.15.7310233</fullName>
+                <default>false</default>
+                <label>401.15.7310233</label>
+            </value>
+            <value>
+                <fullName>401.90.8020020</fullName>
+                <default>false</default>
+                <label>401.90.8020020</label>
+            </value>
+            <value>
+                <fullName>401.90.8020030</fullName>
+                <default>false</default>
+                <label>401.90.8020030</label>
+            </value>
+            <value>
+                <fullName>401.90.8020040</fullName>
+                <default>false</default>
+                <label>401.90.8020040</label>
+            </value>
+            <value>
+                <fullName>401.90.8120020</fullName>
+                <default>false</default>
+                <label>401.90.8120020</label>
+            </value>
+            <value>
+                <fullName>401.90.8120030</fullName>
+                <default>false</default>
+                <label>401.90.8120030</label>
+            </value>
+            <value>
+                <fullName>401.90.8120040</fullName>
+                <default>false</default>
+                <label>401.90.8120040</label>
+            </value>
+            <value>
+                <fullName>401.90.8134020</fullName>
+                <default>false</default>
+                <label>401.90.8134020</label>
+            </value>
+            <value>
+                <fullName>401.90.8134030</fullName>
+                <default>false</default>
+                <label>401.90.8134030</label>
+            </value>
+            <value>
+                <fullName>401.90.8134040</fullName>
+                <default>false</default>
+                <label>401.90.8134040</label>
+            </value>
+            <value>
+                <fullName>401.90.8234020</fullName>
+                <default>false</default>
+                <label>401.90.8234020</label>
+            </value>
+            <value>
+                <fullName>401.90.8234030</fullName>
+                <default>false</default>
+                <label>401.90.8234030</label>
+            </value>
+            <value>
+                <fullName>401.90.8234040</fullName>
+                <default>false</default>
+                <label>401.90.8234040</label>
+            </value>
+            <value>
+                <fullName>401.90.8240000</fullName>
+                <default>false</default>
+                <label>401.90.8240000</label>
+            </value>
+            <value>
+                <fullName>401.90.9099001</fullName>
+                <default>false</default>
+                <label>401.90.9099001</label>
+            </value>
+            <value>
+                <fullName>401.92.9072000</fullName>
+                <default>false</default>
+                <label>401.92.9072000</label>
+            </value>
+            <value>
+                <fullName>401.92.9072010</fullName>
+                <default>false</default>
+                <label>401.92.9072010</label>
+            </value>
+            <value>
+                <fullName>401.92.9073000</fullName>
+                <default>false</default>
+                <label>401.92.9073000</label>
+            </value>
+            <value>
+                <fullName>401.92.9073010</fullName>
+                <default>false</default>
+                <label>401.92.9073010</label>
+            </value>
+            <value>
+                <fullName>401.99.9450012</fullName>
+                <default>false</default>
+                <label>401.99.9450012</label>
+            </value>
+            <value>
+                <fullName>401.99.9540010</fullName>
+                <default>false</default>
+                <label>401.99.9540010</label>
+            </value>
+            <value>
+                <fullName>405.15.7301160</fullName>
+                <default>false</default>
+                <label>405.15.7301160</label>
+            </value>
+            <value>
+                <fullName>401.14.7217080</fullName>
+                <default>false</default>
+                <label>401.14.7217080</label>
+            </value>
+            <value>
+                <fullName>401.11.7062000</fullName>
+                <default>false</default>
+                <label>401.11.7062000</label>
+            </value>
+            <value>
+                <fullName>401.99.9460002</fullName>
+                <default>false</default>
+                <label>401.99.9460002</label>
+            </value>
+            <value>
+                <fullName>401.99.9460010</fullName>
+                <default>false</default>
+                <label>401.99.9460010</label>
+            </value>
+            <value>
+                <fullName>401.99.9540000</fullName>
+                <default>false</default>
+                <label>401.99.9540000</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Sector Level IDIQs</controllingFieldValue>
+            <valueName>401.11.B000001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS JSF Cont</controllingFieldValue>
+            <valueName>401.14.7214050</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS JSF Field</controllingFieldValue>
+            <controllingFieldValue>AFS - FS JSF Field</controllingFieldValue>
+            <valueName>401.14.7214060</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS Hangar Cont</controllingFieldValue>
+            <valueName>401.14.7218070</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Cont</controllingFieldValue>
+            <valueName>401.01.1270202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Cont</controllingFieldValue>
+            <valueName>401.14.7217130</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Sustain Cont</controllingFieldValue>
+            <controllingFieldValue>ASFS-MatSols Sustain Cont</controllingFieldValue>
+            <valueName>401.14.7217060</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS Aviation Cont</controllingFieldValue>
+            <valueName>401.14.7217070</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS Touch Labor</controllingFieldValue>
+            <valueName>401.14.7217080</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS Cont</controllingFieldValue>
+            <valueName>401.14.7217100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS Quality Cont</controllingFieldValue>
+            <valueName>401.14.7217110</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Field</controllingFieldValue>
+            <valueName>401.14.7216130</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contracts - Fed Civ Cont</controllingFieldValue>
+            <valueName>401.11.7529290</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prog Fin-Fed Civ Cont</controllingFieldValue>
+            <valueName>401.11.7529280</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corp Org - Fed Civ Cont</controllingFieldValue>
+            <valueName>401.02.A229000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal IT Field Site</controllingFieldValue>
+            <valueName>401.01.1700203</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Federal IT Cont Site</controllingFieldValue>
+            <valueName>401.01.1900103</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capture Mgt &amp; Inits - AFS</controllingFieldValue>
+            <controllingFieldValue>ASFS - Capture</controllingFieldValue>
+            <valueName>401.11.7062100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility - Lofstrand</controllingFieldValue>
+            <valueName>401.92.9072000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security - Lofstrand</controllingFieldValue>
+            <valueName>401.92.9072010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facility - McLean</controllingFieldValue>
+            <valueName>401.92.9073000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security - McLean</controllingFieldValue>
+            <valueName>401.92.9073010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IS Corporate OH</controllingFieldValue>
+            <valueName>401.90.9099001</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IDS-BLS Field Site</controllingFieldValue>
+            <valueName>401.04.4100000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capture Mgt &amp; Inits - IDS</controllingFieldValue>
+            <valueName>401.11.7063100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maritime Cont Site</controllingFieldValue>
+            <valueName>401.12.7109020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IW&amp;AS Cont Site</controllingFieldValue>
+            <valueName>401.12.7109040</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Army&amp;MD Cont Site</controllingFieldValue>
+            <valueName>401.12.7109050</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maritime Field Site</controllingFieldValue>
+            <valueName>401.12.7110020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;SS Cont Site</controllingFieldValue>
+            <valueName>401.01.1131000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;SS Field Site</controllingFieldValue>
+            <valueName>401.02.2231000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>M&amp;SS WFH - Intel Field</controllingFieldValue>
+            <valueName>401.02.2231033</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security - Intel Cont</controllingFieldValue>
+            <valueName>401.02.9026010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contracts-ASFS SuppSvc</controllingFieldValue>
+            <valueName>401.90.8120020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contracts-IDS SuppSvc</controllingFieldValue>
+            <valueName>401.90.8120030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contracts-Intel SuppSvc</controllingFieldValue>
+            <valueName>401.90.8120040</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IW&amp;AS Field Site</controllingFieldValue>
+            <valueName>401.12.7110040</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Army&amp;MD Field Site</controllingFieldValue>
+            <valueName>401.12.7110050</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SSP Cont Site</controllingFieldValue>
+            <valueName>401.15.7301140</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mission Cont Site</controllingFieldValue>
+            <controllingFieldValue>IDS Mission Solutions</controllingFieldValue>
+            <valueName>401.15.7301160</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Admin - ASFS</controllingFieldValue>
+            <valueName>401.90.8134020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Admin - IDS</controllingFieldValue>
+            <valueName>401.90.8134030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Contract Admin - Intel</controllingFieldValue>
+            <valueName>401.90.8134040</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PFA-ASFS SSB</controllingFieldValue>
+            <valueName>401.90.8234020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PFA-IDS SSB</controllingFieldValue>
+            <valueName>401.90.8234030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PFA-Intel SSB</controllingFieldValue>
+            <valueName>401.90.8234040</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BW - M&amp;SS</controllingFieldValue>
+            <valueName>401.99.9450012</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SecurityPers/Admin-ASFS</controllingFieldValue>
+            <valueName>401.90.8020020</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SecurityPers/Admin-IDS</controllingFieldValue>
+            <valueName>401.90.8020030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SecurityPers/Admin-Intel</controllingFieldValue>
+            <valueName>401.90.8020040</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SSP Field Site</controllingFieldValue>
+            <valueName>401.15.7310140</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mission Field Site</controllingFieldValue>
+            <valueName>401.15.7310160</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defense IT Cont Site</controllingFieldValue>
+            <valueName>401.01.1130202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Space Intel IT Cont Site</controllingFieldValue>
+            <valueName>401.01.1190000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FrostyMug - Field/SCIF</controllingFieldValue>
+            <valueName>401.01.2610000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Analytics Lab Cont Site</controllingFieldValue>
+            <valueName>401.02.2000202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOJ Comp HHS WFH Field</controllingFieldValue>
+            <valueName>401.02.2627233</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government Compliance</controllingFieldValue>
+            <valueName>401.90.8240000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S - GeoInt Cont Site</controllingFieldValue>
+            <valueName>401.01.1141000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S - IT Services Cont</controllingFieldValue>
+            <valueName>401.01.1230202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOJ Treasury Cont Site</controllingFieldValue>
+            <valueName>401.01.1680103</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S - IT Programs Cont</controllingFieldValue>
+            <valueName>401.02.2026600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-IT Services-WFH Field</controllingFieldValue>
+            <valueName>401.01.2610033</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VA Intel Ops IT-Cont Site</controllingFieldValue>
+            <valueName>401.02.2126700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S FMV Analysis Cont Sit</controllingFieldValue>
+            <valueName>401.02.2140000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VA Ops Analytics-Cont Sit</controllingFieldValue>
+            <valueName>401.02.2170000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exec Mgt&amp;Training ContSte</controllingFieldValue>
+            <valueName>401.02.2060202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Anlytcs Cont Site</controllingFieldValue>
+            <valueName>401.02.2070202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEOInt Analysis Cont Site</controllingFieldValue>
+            <valueName>401.02.2160000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT Solutions Cont Site</controllingFieldValue>
+            <valueName>401.02.2190000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Global Anlytcs Field Site</controllingFieldValue>
+            <valueName>401.02.2200000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEOInt Analysis FieldSite</controllingFieldValue>
+            <valueName>401.02.2240000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-IMINT Contractor Site</controllingFieldValue>
+            <valueName>401.02.2180000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S - GeoInt Field Site</controllingFieldValue>
+            <valueName>401.02.2241000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-GeoInt WFH-Field Site</controllingFieldValue>
+            <valueName>401.02.2241033</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOL &amp; Treasury WFH-Field</controllingFieldValue>
+            <valueName>401.02.2250033</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-IT Services-Field</controllingFieldValue>
+            <valueName>401.02.2270000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S FMV Analysis Field</controllingFieldValue>
+            <valueName>401.02.2320000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-IT Programs-WFH-Field</controllingFieldValue>
+            <valueName>401.02.2330033</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DHS-FEMA HQ Field Site</controllingFieldValue>
+            <valueName>401.02.2627100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Sutain Field</controllingFieldValue>
+            <valueName>401.01.1410203</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS OMS Field</controllingFieldValue>
+            <valueName>401.14.7216060</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOL &amp; Treasury Field Site</controllingFieldValue>
+            <valueName>401.02.2627300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Flight Field</controllingFieldValue>
+            <valueName>401.14.7216070</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS Field</controllingFieldValue>
+            <valueName>401.14.7216100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS Space Field</controllingFieldValue>
+            <valueName>401.14.7216140</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - MIS WFH Field</controllingFieldValue>
+            <valueName>401.14.7216033</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISFS WFH Field</controllingFieldValue>
+            <valueName>401.14.7216333</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISC WFH Field</controllingFieldValue>
+            <valueName>401.14.7216433</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS Mgmt</controllingFieldValue>
+            <valueName>401.11.7062000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VA Tech Ops Field Site</controllingFieldValue>
+            <valueName>401.02.2280000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defense IT Field Site</controllingFieldValue>
+            <valueName>401.02.2330000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Space Intel IT Field Site</controllingFieldValue>
+            <valueName>401.02.2380000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FMV Analysis Field Site</controllingFieldValue>
+            <valueName>401.02.2660000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exec Mgt&amp;Training FldSite</controllingFieldValue>
+            <valueName>401.02.2670000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Intel Mgmt</controllingFieldValue>
+            <valueName>401.11.7064000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DHS Programs Field Site</controllingFieldValue>
+            <valueName>401.02.2627400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-IT Programs-Field</controllingFieldValue>
+            <controllingFieldValue>VA Intel Ops IT-Field</controllingFieldValue>
+            <valueName>401.02.2627600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>VA Ops Analytics-Field</controllingFieldValue>
+            <valueName>401.02.2680000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>D&amp;S-IMINT Field Site</controllingFieldValue>
+            <valueName>401.02.2690000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DHS-FEMA HQ Cont Site</controllingFieldValue>
+            <valueName>401.02.2829100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOJ Comp HHS Cont Site</controllingFieldValue>
+            <valueName>401.02.2627200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOJ Comp HHS Cont Site</controllingFieldValue>
+            <valueName>401.02.2829200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOL &amp; Treasury Cont Site</controllingFieldValue>
+            <valueName>401.02.2829300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISO Solution Delivery</controllingFieldValue>
+            <valueName>401.99.9460002</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DHS Programs Cont Site</controllingFieldValue>
+            <valueName>401.02.2829400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISO Capability Focus</controllingFieldValue>
+            <valueName>401.99.9460010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DOJ Treasury Field Site</controllingFieldValue>
+            <valueName>401.02.2250000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISO and Futures</controllingFieldValue>
+            <valueName>401.99.9540000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CISO Engineering</controllingFieldValue>
+            <valueName>401.99.9540010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capture Mgt &amp; Inits-Intel</controllingFieldValue>
+            <valueName>401.11.7064100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IDS Mgmt</controllingFieldValue>
+            <valueName>401.11.7063000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BTC Cont Site</controllingFieldValue>
+            <valueName>401.12.7109060</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MD Ops 2 Cont Site</controllingFieldValue>
+            <valueName>401.02.2126800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C5ISR Cont Site</controllingFieldValue>
+            <valueName>401.12.7109030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C5ISR Field Site</controllingFieldValue>
+            <valueName>401.12.7110030</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C5ISR WFH - IDS Field</controllingFieldValue>
+            <valueName>401.12.7110333</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>BLS Intel Field Site</controllingFieldValue>
+            <valueName>401.02.2627500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISC Cont</controllingFieldValue>
+            <controllingFieldValue>AFS - FISAC Cont</controllingFieldValue>
+            <valueName>401.15.7307170</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ASFS - ISC Field</controllingFieldValue>
+            <valueName>401.15.7310170</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Prog Fin-Intel Field</controllingFieldValue>
+            <valueName>401.11.7527280</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AFS-SES Ground Space Fld</controllingFieldValue>
+            <valueName>401.14.7216090</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AFS - SES IRSP Cont</controllingFieldValue>
+            <valueName>401.14.7217090</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ft. Gordon Ops Contr Site</controllingFieldValue>
+            <valueName>401.02.2026000</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
