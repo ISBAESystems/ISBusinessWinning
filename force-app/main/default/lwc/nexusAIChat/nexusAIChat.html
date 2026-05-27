@@ -1,0 +1,175 @@
+<template>
+    <div class={containerClass}>
+
+        <!-- FAB launcher (minimized) -->
+        <template lwc:if={isMinimized}>
+            <button class="fab" onclick={toggleChat} title="Open Nexus Chat">
+                <lightning-icon icon-name="utility:agent_astro" size="medium" alternative-text="Nexus"></lightning-icon>
+                <template lwc:if={unreadCount}>
+                    <span class="fab-badge">{unreadCount}</span>
+                </template>
+            </button>
+        </template>
+
+        <!-- Chat window (open) -->
+        <template lwc:else>
+            <template lwc:if={isMaximized}>
+                <div class="chat-backdrop" onclick={handleBackdropClick}></div>
+            </template>
+            <div class={chatWindowClass}>
+
+                <!-- Header -->
+                <div class="chat-header" onclick={toggleChat} title="Minimize">
+                    <div class="header-icon">
+                        <lightning-icon icon-name="utility:agent_astro" size="small" alternative-text="Nexus"></lightning-icon>
+                    </div>
+                    <div class="header-info">
+                        <!-- <span class="header-eyebrow">Agentforce</span> -->
+                        <span class="header-title">Nexus AI Assistant</span>
+                    </div>
+                    <div class="header-actions">
+                        <span class="status-badge">
+                            <span class="status-dot"></span>Online
+                        </span>
+                        <button class="icon-btn" onclick={toggleMaximize} title={maximizeTitle}>
+                            <lightning-icon icon-name={maximizeIcon} size="x-small" alternative-text={maximizeTitle}></lightning-icon>
+                        </button>
+                        <button class="icon-btn" onclick={handleMinimize} title="Minimize">
+                            <lightning-icon icon-name="utility:minimize_window" size="x-small" alternative-text="Minimize"></lightning-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mode toggle -->
+                <div class="mode-bar">
+                    <button class={chatModeClass} onclick={setModeChat} title="General chat">
+                        <lightning-icon icon-name="utility:chat" size="x-small" alternative-text="Chat"></lightning-icon>
+                        Chat
+                    </button>
+                    <!-- <button class={agentModeClass} onclick={setModeAgents} title="Salesforce agent orchestration">
+                        <lightning-icon icon-name="utility:groups" size="x-small" alternative-text="Agents"></lightning-icon>
+                        Agents
+                    </button> -->
+                    <span class="mode-hint">{modeHint}</span>
+                </div>
+
+                <!-- Active agents strip (agents mode only) -->
+                <template lwc:if={isAgentMode}>
+                    <div class="agent-strip">
+                        <template for:each={agentPills} for:item="pill">
+                            <span key={pill.name} class={pill.pillClass}>
+                                <lightning-icon icon-name={pill.icon} size="xx-small" alternative-text={pill.name}></lightning-icon>
+                                {pill.label}
+                            </span>
+                        </template>
+                    </div>
+                </template>
+
+                <!-- Message List -->
+                <div class="message-list" lwc:ref="messageList">
+
+                    <!-- Welcome -->
+                    <template lwc:if={showWelcome}>
+                        <div class="welcome">
+                            <div class="welcome-icon">
+                                <lightning-icon icon-name="utility:agent_astro" size="large" alternative-text="Nexus"></lightning-icon>
+                            </div>
+                            <h2 class="welcome-title">Hi, I'm Nexus</h2>
+                            <p class="welcome-sub">{welcomeSub}</p>
+                            <div class="chips">
+                                <template for:each={suggestions} for:item="s">
+                                    <button key={s} class="chip" data-label={s} onclick={handleSuggestion}>{s}</button>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+
+                    <!-- Messages + inline follow-up suggestions -->
+                    <template for:each={uiMessages} for:item="msg">
+                        <div key={msg.id}>
+
+                            <!-- Message bubble -->
+                            <div class={msg.wrapClass}>
+                                <div class={msg.avatarClass}>{msg.initials}</div>
+                                <div class="msg-body">
+                                    <div class="msg-meta">
+                                        <span class="msg-name">{msg.name}</span>
+                                        <template lwc:if={msg.agentName}>
+                                            <span class={msg.agentBadgeClass}>{msg.agentName}</span>
+                                        </template>
+                                    </div>
+                                    <div class={msg.bubbleClass}>
+                                        <template lwc:if={msg.typing}>
+                                            <div class="typing-dots">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </template>
+                                        <template lwc:else>
+                                            <c-formatted-message value={msg.text}></c-formatted-message>                                            
+                                        </template>
+                                    </div>
+                                    <template lwc:if={msg.time}>
+                                        <span class="msg-time">{msg.time}</span>
+                                    </template>
+                                </div>
+                            </div>
+
+                            <!-- Follow-up suggestion chips (shown below the last assistant message) -->
+                            <template lwc:if={msg.showSuggestions}>
+                                <div class="followup-chips">
+                                    <span class="followup-label">
+                                        <lightning-icon icon-name="utility:sparkles" size="xx-small" alternative-text="suggestions"></lightning-icon>
+                                        Suggested follow-ups
+                                    </span>
+                                    <div class="chips">
+                                        <template for:each={msg.suggestions} for:item="s">
+                                            <button key={s} class="chip chip-followup" data-label={s} onclick={handleSuggestion}>{s}</button>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Error -->
+                <template lwc:if={errorMessage}>
+                    <div class="error-bar">
+                        <lightning-icon icon-name="utility:error" size="x-small" alternative-text="Error"></lightning-icon>
+                        {errorMessage}
+                    </div>
+                </template>
+
+                <!-- Input Panel -->
+                <div class="input-panel">
+                    <div class="input-toolbar">
+                        <span class="input-label">{inputLabel}</span>
+                        <button class="tool-btn" title="Clear conversation" onclick={clearChat}>
+                            <lightning-icon icon-name="utility:delete" size="x-small" alternative-text="Clear"></lightning-icon>
+                        </button>
+                    </div>
+                    <div class="input-row">
+                        <textarea
+                            class="chat-textarea"
+                            placeholder={inputPlaceholder}
+                            value={inputValue}
+                            oninput={handleInput}
+                            onkeydown={handleKeyDown}
+                            disabled={isLoading}
+                            lwc:ref="textarea"
+                            rows="1">
+                        </textarea>
+                        <button class="send-btn" onclick={sendMessage} disabled={sendDisabled} title="Send">
+                            <lightning-icon icon-name="utility:send" size="x-small" alternative-text="Send"></lightning-icon>
+                        </button>
+                    </div>
+                    <div class="input-footer">
+                        ★ Powered by BAE Systems Mission Assist AI · Responses may not always be accurate
+                    </div>
+                </div>
+
+            </div>
+        </template>
+    </div>
+</template>

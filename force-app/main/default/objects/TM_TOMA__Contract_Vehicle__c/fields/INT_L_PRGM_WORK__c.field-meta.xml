@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INT_L_PRGM_WORK__c</fullName>
+    <label>INT&apos;L PRGM / Work</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>International__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Direct Commercial Sale (DCS)</fullName>
+                <default>false</default>
+                <label>Direct Commercial Sale (DCS)</label>
+            </value>
+            <value>
+                <fullName>Domestic</fullName>
+                <default>false</default>
+                <label>Domestic</label>
+            </value>
+            <value>
+                <fullName>Foreign Military Sale (FMS)</fullName>
+                <default>false</default>
+                <label>Foreign Military Sale (FMS)</label>
+            </value>
+            <value>
+                <fullName>Other Foreign</fullName>
+                <default>false</default>
+                <label>Other Foreign</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>unchecked</controllingFieldValue>
+            <valueName>Domestic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Direct Commercial Sale (DCS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Foreign Military Sale (FMS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>Other Foreign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>checked</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
