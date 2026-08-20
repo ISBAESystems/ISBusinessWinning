@@ -1,0 +1,120 @@
+{
+  "@odata.etag": "\"1\"",
+  "ItemInternalId": "93339",
+  "ID": 93339,
+  "Project": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 3556,
+    "Value": "3100996"
+  },
+  "Project#Id": 3556,
+  "Task_x0020_Order": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 1,
+    "Value": "*Task Order*"
+  },
+  "Task_x0020_Order#Id": 1,
+  "Contracts_x0020_Subfolder": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 2,
+    "Value": "Closeout"
+  },
+  "Contracts_x0020_Subfolder#Id": 2,
+  "Project_x003a_WBSName": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 3556,
+    "Value": "ASW Systems Engineering"
+  },
+  "Project_x003a_WBSName#Id": 3556,
+  "Task_x0020_Order_x003a_WBS2Name": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 1,
+    "Value": "*Task Order Name*"
+  },
+  "Task_x0020_Order_x003a_WBS2Name#Id": 1,
+  "Editor": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+    "Claims": "Swygert, Carol C (US)",
+    "DisplayName": "Swygert, Carol C (US)",
+    "Email": "",
+    "Picture": null,
+    "Department": "",
+    "JobTitle": ""
+  },
+  "Editor#Claims": "Swygert, Carol C (US)",
+  "Project_x003a_CA": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 3556,
+    "Value": "Carol Swygert"
+  },
+  "Project_x003a_CA#Id": 3556,
+  "Project_x003a_PCN": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 3556,
+    "Value": "N00421-96-D5120"
+  },
+  "Project_x003a_PCN#Id": 3556,
+  "Created": "2021-06-01T21:07:13Z",
+  "Author": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+    "Claims": "Swygert, Carol C (US)",
+    "DisplayName": "Swygert, Carol C (US)",
+    "Email": null,
+    "Picture": null,
+    "Department": null,
+    "JobTitle": null
+  },
+  "Author#Claims": "Swygert, Carol C (US)",
+  "Task_x0020_Order_x003a_TO_x0020_CA": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 1,
+    "Value": "*TO CA*"
+  },
+  "Task_x0020_Order_x003a_TO_x0020_CA#Id": 1,
+  "Task_x0020_Order_x003a_TO_x0020_PCN": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+    "Id": 1,
+    "Value": null
+  },
+  "Task_x0020_Order_x003a_TO_x0020_PCN#Id": 1,
+  "Modified": "2021-06-01T21:09:43Z",
+  "SharedWithUsers": [
+
+  ],
+  "SharedWithUsers@odata.type": "#Collection(Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser)",
+  "SharedWithUsers#Claims": [
+
+  ],
+  "SharedWithUsers#Claims@odata.type": "#Collection(String)",
+  "MediaServiceImageTags": [
+
+  ],
+  "MediaServiceImageTags@odata.type": "#Collection(Microsoft.Azure.Connectors.SharePoint.SPListExpandedTaxonomy)",
+  "MediaServiceImageTags#WssId": [
+
+  ],
+  "MediaServiceImageTags#WssId@odata.type": "#Collection(Int64)",
+  "OData__DisplayName": "",
+  "{Identifier}": "Contracts%2bLibrary%252fProject%2b0996-02-0008%2bCloseout%2bBulletin.pdf",
+  "{IsFolder}": false,
+  "{Thumbnail}": {
+    "Large": "https://usgovtexas1.mediag.svc.ms/transform/thumbnail?provider=spo&farmid=181102&inputFormat=pdf&cs=MzZlZTU0YWMtNDE0Yy00MWVmLWFmZGUtMmRkZmQyNWQ1NDA4fFNQTw&docid=https%3a%2f%2fbaesystemsus.sharepoint.us%3a443%2f_api%2fv2.0%2fdrives%2fb!9Wz9o8g9gka5X3xmMfzyxaDIdB-xD4RLttKdQEtX2vFCnQqAkFIZQKCifm072t8g%2fitems%2f01VS5NGNFSN6LNCVQYFFG3K2VGZXRW24XN%3fversion%3dPublished&access_token=v1.eyJzaXRlaWQiOiJhM2ZkNmNmNS0zZGM4LTQ2ODItYjk1Zi03YzY2MzFmY2YyYzUiLCJhcHBfZGlzcGxheW5hbWUiOiJBcGlIdWItQ29ubmVjdG9ycy1HQ0NIaWdoIiwiYXBwaWQiOiIzNmVlNTRhYy00MTRjLTQxZWYtYWZkZS0yZGRmZDI1ZDU0MDgiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYmFlc3lzdGVtc3VzLnNoYXJlcG9pbnQudXNAMDNiODZjM2EtODk1NC00ZDE5LTk1MjItZTQ2NGZlOWYyMmNlIiwiZXhwIjoiMTc4NzIwNTYwMCJ9.CkAKDGVudHJhX2NsYWltcxIwQ1BPem1kUUdFQUFhRm1wNVZYZEJZVGhKU1ZVeVNHRnNZbVJmV2xWUlFVRXFBQT09CgoKBHNuaWQSAjI2EgQImsMCGg01Mi4xMjcuMzQuMTY0KixhRTY4eVFmS2lhMU5hVkQ3T0JsODRES28raUhESkNWWG1xQlhRZFNrdElRPTB2OAFKEGhhc2hlZHByb29mdG9rZW5SE1sia21zaSIsImR2Y19kbWpkIl1qJDAwNmVhODM5LTljODAtYWVhOS1kZDA0LWQyODQ0Yjk1NDkyM3IpMGguZnxtZW1iZXJzaGlwfDEwMDMyOTE4YmY1NDE1OWNAbGl2ZS5jb216ATKCARIJOmy4A1SJGU0RlSLkZP6fIs6SAQZIZWN0b3KaAQVDYWJhbqIBGmhlY3Rvci5jYWJhbkBiYWVzeXN0ZW1zLnVzqgEQMTAwMzI5MThCRjU0MTU5Q7IB1gNhbGxmaWxlcy53cml0ZSBhbGxzaXRlcy5mdWxsY29udHJvbCBhbGxzaXRlcy5yZWFkIGdyb3VwLndyaXRlIHNoYXJlcG9pbnR0ZW5hbnRzZXR0aW5ncy5yZWFkd3JpdGUuYWxsIGNvbnRhaW5lci5zZWxlY3RlZCBkYXNoYm9hcmRjYXJkLnNlbmQuYXBwIGNvbnRhaW5lci5tYW5hZ2UuYWxsIGNvbnRhaW5lci5tYW5hZ2UuYWxsIEFkbWluaXN0cmF0aXZlLk1hbmFnZSBBZG1pbmlzdHJhdGl2ZS5SZWFkIEJhc2ljUHJvamVjdEFsbC5SZWFkIEJhc2ljUHJvamVjdEFsbC5Xcml0ZSBFbnRlcnByaXNlUmVzb3VyY2VzLlJlYWQgRW50ZXJwcmlzZVJlc291cmNlcy5Xcml0ZSBFbnRlcnByaXNlUmVzb3VyY2VzLkJ5cGFzc0RlbGVnYXRlIFN0YXR1c2luZy5TdWJtaXRTdGF0dXMgUmVwb3J0aW5nLlJlYWQgZmFzdFNlYXJjaC5xdWVyeXNwIGFsbHByb2ZpbGVzLmZ1bGxjb250cm9sIGFsbHByb2ZpbGVzLndyaXRlIHRlcm1zdG9yZS53cml0ZQ.schzxw9pVUgFq-FpSl8CHSDvjNrzvcK87cVQs1KLGBs&width=800&height=800&farmid=181102",
+    "Medium": "https://usgovtexas1.mediag.svc.ms/transform/thumbnail?provider=spo&farmid=181102&inputFormat=pdf&cs=MzZlZTU0YWMtNDE0Yy00MWVmLWFmZGUtMmRkZmQyNWQ1NDA4fFNQTw&docid=https%3a%2f%2fbaesystemsus.sharepoint.us%3a443%2f_api%2fv2.0%2fdrives%2fb!9Wz9o8g9gka5X3xmMfzyxaDIdB-xD4RLttKdQEtX2vFCnQqAkFIZQKCifm072t8g%2fitems%2f01VS5NGNFSN6LNCVQYFFG3K2VGZXRW24XN%3fversion%3dPublished&access_token=v1.eyJzaXRlaWQiOiJhM2ZkNmNmNS0zZGM4LTQ2ODItYjk1Zi03YzY2MzFmY2YyYzUiLCJhcHBfZGlzcGxheW5hbWUiOiJBcGlIdWItQ29ubmVjdG9ycy1HQ0NIaWdoIiwiYXBwaWQiOiIzNmVlNTRhYy00MTRjLTQxZWYtYWZkZS0yZGRmZDI1ZDU0MDgiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYmFlc3lzdGVtc3VzLnNoYXJlcG9pbnQudXNAMDNiODZjM2EtODk1NC00ZDE5LTk1MjItZTQ2NGZlOWYyMmNlIiwiZXhwIjoiMTc4NzIwNTYwMCJ9.CkAKDGVudHJhX2NsYWltcxIwQ1BPem1kUUdFQUFhRm1wNVZYZEJZVGhKU1ZVeVNHRnNZbVJmV2xWUlFVRXFBQT09CgoKBHNuaWQSAjI2EgQImsMCGg01Mi4xMjcuMzQuMTY0KixhRTY4eVFmS2lhMU5hVkQ3T0JsODRES28raUhESkNWWG1xQlhRZFNrdElRPTB2OAFKEGhhc2hlZHByb29mdG9rZW5SE1sia21zaSIsImR2Y19kbWpkIl1qJDAwNmVhODM5LTljODAtYWVhOS1kZDA0LWQyODQ0Yjk1NDkyM3IpMGguZnxtZW1iZXJzaGlwfDEwMDMyOTE4YmY1NDE1OWNAbGl2ZS5jb216ATKCARIJOmy4A1SJGU0RlSLkZP6fIs6SAQZIZWN0b3KaAQVDYWJhbqIBGmhlY3Rvci5jYWJhbkBiYWVzeXN0ZW1zLnVzqgEQMTAwMzI5MThCRjU0MTU5Q7IB1gNhbGxmaWxlcy53cml0ZSBhbGxzaXRlcy5mdWxsY29udHJvbCBhbGxzaXRlcy5yZWFkIGdyb3VwLndyaXRlIHNoYXJlcG9pbnR0ZW5hbnRzZXR0aW5ncy5yZWFkd3JpdGUuYWxsIGNvbnRhaW5lci5zZWxlY3RlZCBkYXNoYm9hcmRjYXJkLnNlbmQuYXBwIGNvbnRhaW5lci5tYW5hZ2UuYWxsIGNvbnRhaW5lci5tYW5hZ2UuYWxsIEFkbWluaXN0cmF0aXZlLk1hbmFnZSBBZG1pbmlzdHJhdGl2ZS5SZWFkIEJhc2ljUHJvamVjdEFsbC5SZWFkIEJhc2ljUHJvamVjdEFsbC5Xcml0ZSBFbnRlcnByaXNlUmVzb3VyY2VzLlJlYWQgRW50ZXJwcmlzZVJlc291cmNlcy5Xcml0ZSBFbnRlcnByaXNlUmVzb3VyY2VzLkJ5cGFzc0RlbGVnYXRlIFN0YXR1c2luZy5TdWJtaXRTdGF0dXMgUmVwb3J0aW5nLlJlYWQgZmFzdFNlYXJjaC5xdWVyeXNwIGFsbHByb2ZpbGVzLmZ1bGxjb250cm9sIGFsbHByb2ZpbGVzLndyaXRlIHRlcm1zdG9yZS53cml0ZQ.schzxw9pVUgFq-FpSl8CHSDvjNrzvcK87cVQs1KLGBs&width=176&height=176&farmid=181102",
+    "Small": "https://usgovtexas1.mediag.svc.ms/transform/thumbnail?provider=spo&farmid=181102&inputFormat=pdf&cs=MzZlZTU0YWMtNDE0Yy00MWVmLWFmZGUtMmRkZmQyNWQ1NDA4fFNQTw&docid=https%3a%2f%2fbaesystemsus.sharepoint.us%3a443%2f_api%2fv2.0%2fdrives%2fb!9Wz9o8g9gka5X3xmMfzyxaDIdB-xD4RLttKdQEtX2vFCnQqAkFIZQKCifm072t8g%2fitems%2f01VS5NGNFSN6LNCVQYFFG3K2VGZXRW24XN%3fversion%3dPublished&access_token=v1.eyJzaXRlaWQiOiJhM2ZkNmNmNS0zZGM4LTQ2ODItYjk1Zi03YzY2MzFmY2YyYzUiLCJhcHBfZGlzcGxheW5hbWUiOiJBcGlIdWItQ29ubmVjdG9ycy1HQ0NIaWdoIiwiYXBwaWQiOiIzNmVlNTRhYy00MTRjLTQxZWYtYWZkZS0yZGRmZDI1ZDU0MDgiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYmFlc3lzdGVtc3VzLnNoYXJlcG9pbnQudXNAMDNiODZjM2EtODk1NC00ZDE5LTk1MjItZTQ2NGZlOWYyMmNlIiwiZXhwIjoiMTc4NzIwNTYwMCJ9.CkAKDGVudHJhX2NsYWltcxIwQ1BPem1kUUdFQUFhRm1wNVZYZEJZVGhKU1ZVeVNHRnNZbVJmV2xWUlFVRXFBQT09CgoKBHNuaWQSAjI2EgQImsMCGg01Mi4xMjcuMzQuMTY0KixhRTY4eVFmS2lhMU5hVkQ3T0JsODRES28raUhESkNWWG1xQlhRZFNrdElRPTB2OAFKEGhhc2hlZHByb29mdG9rZW5SE1sia21zaSIsImR2Y19kbWpkIl1qJDAwNmVhODM5LTljODAtYWVhOS1kZDA0LWQyODQ0Yjk1NDkyM3IpMGguZnxtZW1iZXJzaGlwfDEwMDMyOTE4YmY1NDE1OWNAbGl2ZS5jb216ATKCARIJOmy4A1SJGU0RlSLkZP6fIs6SAQZIZWN0b3KaAQVDYWJhbqIBGmhlY3Rvci5jYWJhbkBiYWVzeXN0ZW1zLnVzqgEQMTAwMzI5MThCRjU0MTU5Q7IB1gNhbGxmaWxlcy53cml0ZSBhbGxzaXRlcy5mdWxsY29udHJvbCBhbGxzaXRlcy5yZWFkIGdyb3VwLndyaXRlIHNoYXJlcG9pbnR0ZW5hbnRzZXR0aW5ncy5yZWFkd3JpdGUuYWxsIGNvbnRhaW5lci5zZWxlY3RlZCBkYXNoYm9hcmRjYXJkLnNlbmQuYXBwIGNvbnRhaW5lci5tYW5hZ2UuYWxsIGNvbnRhaW5lci5tYW5hZ2UuYWxsIEFkbWluaXN0cmF0aXZlLk1hbmFnZSBBZG1pbmlzdHJhdGl2ZS5SZWFkIEJhc2ljUHJvamVjdEFsbC5SZWFkIEJhc2ljUHJvamVjdEFsbC5Xcml0ZSBFbnRlcnByaXNlUmVzb3VyY2VzLlJlYWQgRW50ZXJwcmlzZVJlc291cmNlcy5Xcml0ZSBFbnRlcnByaXNlUmVzb3VyY2VzLkJ5cGFzc0RlbGVnYXRlIFN0YXR1c2luZy5TdWJtaXRTdGF0dXMgUmVwb3J0aW5nLlJlYWQgZmFzdFNlYXJjaC5xdWVyeXNwIGFsbHByb2ZpbGVzLmZ1bGxjb250cm9sIGFsbHByb2ZpbGVzLndyaXRlIHRlcm1zdG9yZS53cml0ZQ.schzxw9pVUgFq-FpSl8CHSDvjNrzvcK87cVQs1KLGBs&width=96&height=96&farmid=181102"
+  },
+  "{Link}": "https://baesystemsus.sharepoint.us/sites/IS-HQ_DocPortal/Contracts%20Library/Project%200996-02-0008%20Closeout%20Bulletin.pdf",
+  "{Name}": "Project 0996-02-0008 Closeout Bulletin",
+  "{FilenameWithExtension}": "Project 0996-02-0008 Closeout Bulletin.pdf",
+  "{Path}": "Contracts Library/",
+  "{FullPath}": "Contracts Library/Project 0996-02-0008 Closeout Bulletin.pdf",
+  "{ContentType}": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedContentType",
+    "Id": "0x010100843423AF8A691B4BAB9FDFAF0AB2488E",
+    "Name": "Document"
+  },
+  "{ContentType}#Id": "0x010100843423AF8A691B4BAB9FDFAF0AB2488E",
+  "{IsCheckedOut}": false,
+  "{DriveId}": "b!9Wz9o8g9gka5X3xmMfzyxaDIdB-xD4RLttKdQEtX2vFCnQqAkFIZQKCifm072t8g",
+  "{DriveItemId}": "01VS5NGNFSN6LNCVQYFFG3K2VGZXRW24XN",
+  "{VersionNumber}": "1.0"
+}
